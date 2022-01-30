@@ -3,12 +3,12 @@ language: node_js
 cache:
   directories:
     - ~/.npm
-    
+
 node_js:
-  - '8'
-  - '10'
-  - '12'
-  
+  - "8"
+  - "10"
+  - "12"
+
 services:
   - mongodb
 
@@ -29,8 +29,8 @@ env:
     - MONGO_URI_TESTS=mongodb://localhost/express-rest-es2017-boilerplate
     - EMAIL_PORT=587
     - EMAIL_HOST=smtp-relay.sendinblue.com
-    - EMAIL_USERNAME=smtp-username
-    - EMAIL_PASSWORD=smtp-password
+    - EMAIL_USERNAME=sudeepgurung.sg@gmail.com
+    - EMAIL_PASSWORD=spPnDEgQmVyhx3J5
 
 script: yarn validate
 after_success: yarn coverage
