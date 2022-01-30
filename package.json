@@ -14,7 +14,6 @@
     "url": "http://localhost:3000/"
   },
   "scripts": {
-    "precommit": "yarn lint",
     "prestart": "yarn docs",
     "start": "cross-env NODE_ENV=production pm2 start ./src/index.js",
     "dev": "nodemon ./src/index.js",
@@ -40,6 +39,11 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:danielfsousa/express-rest-es2017-boilerplate.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "keywords": [
     "express",
